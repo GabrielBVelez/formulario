@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <h2 id="cabeçalho">Formulário UVA</h2>
+    </div>
+
+    <form method="GET" action="login.html" id="form">
+
+        <fieldset id="field1">
+            <legend>Dados Pessoais:</legend>
+            <div class="campo">
+                <label><strong>
+                        Nome Completo: <br />
+                        <input type="text" name="name" required minlength="15" placeholder="Nome Completo">
+                    </strong></label>
+            </div> <br />
+            <div class="campo">
+                <label><strong>
+                        E-mail: <br />
+                        <input type="email" name="email" required minlength="10"
+                            pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+                            placeholder="abcdefg@email.com">
+                    </strong></label>
+            </div> <br />
+            <div class="campo">
+                <label><strong>
+                        Data de Nascimento: <br />
+                        <input id="dataNascimento" type="date" name="birthday" required>
+                    </strong></label>
+
+            </div> <br />
+            <div class="campo">
+                <label><strong>Sexo:</strong></label>
+                <select required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+            </div> <br />
+            <div class="campo">
+                <label><strong>Estado Civil:</strong></label>
+                <select required id="estadoCivil">
+                    <option disabled selected value="">Selecione</option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais:</legend>
+            <div class="campo">
+                <label><strong>Áreas de Interesse:</strong></label> <br>
+                <label>
+                    Análise
+                    <input type="checkbox" name="Analise">
+                </label> <br>
+                <label>
+                    Banco de Dados
+                    <input type="checkbox" name="BD">
+                </label> <br>
+                <label>
+                    Desenvolvimento
+                    <input type="checkbox" name="Desenv">
+                </label> <br>
+                <label>
+                    Engenharia de Software
+                    <input type="checkbox" name="engSoftware">
+                </label> <br>
+                <label>
+                    Redes de Computadores
+                    <input type="checkbox" name="areasInteresse">
+                </label> <br>
+            </div>
+        </fieldset> <br>
+
+        <div>
+            <button onclick="checarIdade()">Cadastrar</button>
+        </div>
+    </form>
+
+    <fieldset id="fieldTeste"></fieldset>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

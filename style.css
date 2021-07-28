@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-size: 20px;
+    background-color: #48D1CC;
+}
+
+fieldset {
+    border: 3px solid #4B0082;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-color: #ADD8E6;
+    text-align: auto;
+}
+
+h2 {
+    margin-left: 44%;
+    color:#4B0082;
+}
+
+.campo {
+    margin-left: 235px;
+    padding: 5px;
+}
+
+input[type="text"], input[type="date"], input[type="email"], select {
+    border-radius: 5px;
+    height: 25px;
+    border: 1px solid #0000CD;
+}
+
+input[type="date"] {
+    width:175px;
+}
+
+#field1 {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    border: 2px solid #0000CD;
+    border-radius: 7px;
+    margin-left: 46%;
+    text-align: center;
+    background-color: darkslateblue;
+    color: white;
+}
+
+button:hover {
+    background-color: royalblue;
+    color: black;
+}
+
+input[type="text"]:hover, input[type="date"]:hover, input[type="email"]:hover, select:hover, input[type="checkbox"]:hover {
+    background-color:aquamarine ;
+} 
+
+#fieldTeste {
+    height: 30px;
+    border: none;
+    background-color: #48D1CC;
+}
+
+legend {
+    margin-left: auto;
+    margin-right: auto;
+}
